@@ -1,0 +1,16 @@
+# PGL12G pin constraint template.
+#
+# Fill this in from the PGL12G board schematic. The Cyclone IV pin names from
+# the original Quartus .qsf cannot be reused on PGL12G.
+#
+# Required top-level ports:
+#   clk
+#   rst_32
+#   DAC_A_CLK, DAC_B_CLK
+#   DAC_A_OUT[13:0], DAC_B_OUT[13:0]
+#   ADC_A_CLK, ADC_B_CLK, ADC_C_CLK, ADC_D_CLK
+#   ADC_A_IN[15:0], ADC_B_IN[15:0], ADC_C_IN[15:0], ADC_D_IN[15:0]
+#   CS, RS, WR, RD
+#   SD[15:0]
+#
+# Also check and set IO standards for the STM32 FMC bus and ADC/DAC interfaces.

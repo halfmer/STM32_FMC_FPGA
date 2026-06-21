@@ -1,0 +1,30 @@
+vcd file tb_reg1.vcd
+vcd add /tb/clk130
+vcd add /tb/fmc_clk
+vcd add /tb/rst_n
+vcd add /tb/cs
+vcd add /tb/rs
+vcd add /tb/wr
+vcd add /tb/rd
+vcd add /tb/SD
+vcd add /tb/adc
+vcd add /tb/state
+vcd add /tb/dut/can_read
+vcd add /tb/dut/sample_num
+vcd add /tb/dut/read_count
+vcd add /tb/dut/FIFO_OUT
+vcd add /tb/dut/fmc_inst/ADDR
+vcd add /tb/dut/fmc_inst/RD_DATA
+vcd add /tb/dut/fmc_inst/WR_ADDR1
+vcd add /tb/dut/fmc_inst/WR_ADDR2
+vcd add /tb/dut/fmc_inst/WR_ADDR3
+vcd add /tb/dut/fmc_inst/FMC_DET
+vcd add /tb/dut/my_fifo_inst/IN_DATA
+vcd add /tb/dut/my_fifo_inst/wrreq
+vcd add /tb/dut/my_fifo_inst/wrfull
+vcd add /tb/dut/my_fifo_inst/rdreq
+vcd add /tb/dut/my_fifo_inst/rd_count
+vcd add /tb/dut/my_fifo_inst/wr_count
+vcd add /tb/dut/my_fifo_inst/write_done
+run -all
+quit -f

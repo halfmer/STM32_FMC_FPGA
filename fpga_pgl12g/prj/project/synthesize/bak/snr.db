@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="synthesize_runtime" title="Synthesize Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:3s</data>
+            <data>188</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>AMD Ryzen 7 7745HX with Radeon Graphics</data>
+            <data>15</data>
+        </row>
+    </table>
+    <table id="synthesize_messages" title="Synthesize Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 131)] PAP_IO_DIRECTION is already defined in p:SD[9], new value INOUT will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 135)] PAP_IO_DRIVE is already defined in p:SD[9], new value 2 will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 137)] PAP_IO_SLEW is already defined in p:SD[9], new value SLOW will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 138)] PAP_IO_DIRECTION is already defined in p:SD[5], new value INOUT will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 142)] PAP_IO_DRIVE is already defined in p:SD[5], new value 4 will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 144)] PAP_IO_SLEW is already defined in p:SD[5], new value SLOW will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 145)] PAP_IO_DIRECTION is already defined in p:SD[0], new value INOUT will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 149)] PAP_IO_DRIVE is already defined in p:SD[0], new value 4 will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4026: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 151)] PAP_IO_SLEW is already defined in p:SD[0], new value SLOW will overwrite the current value.</data>
+        </row>
+        <row>
+            <data message="6">SDC-2017: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 51)] Nothing implicitly matched 'clk_130m'.</data>
+        </row>
+        <row>
+            <data message="6">SDC-2027: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 51)] One or more clocks can not find in the group 'clk_50m clk_130m', command 'set_clock_groups' is ignored.</data>
+        </row>
+        <row>
+            <data message="4">The pattern 'SD*' in command 'get_ports SD*' match 16 objects below:</data>
+        </row>
+        <row>
+            <data message="4">port SD[0]</data>
+        </row>
+        <row>
+            <data message="4">port SD[1]</data>
+        </row>
+        <row>
+            <data message="4">port SD[2]</data>
+        </row>
+        <row>
+            <data message="4">port SD[3]</data>
+        </row>
+        <row>
+            <data message="4">port SD[4]</data>
+        </row>
+        <row>
+            <data message="4">port SD[5]</data>
+        </row>
+        <row>
+            <data message="4">port SD[6]</data>
+        </row>
+        <row>
+            <data message="4">port SD[7]</data>
+        </row>
+        <row>
+            <data message="4">port SD[8]</data>
+        </row>
+        <row>
+            <data message="4">port SD[9]</data>
+        </row>
+        <row>
+            <data message="4">port SD[10]</data>
+        </row>
+        <row>
+            <data message="4">port SD[11]</data>
+        </row>
+        <row>
+            <data message="4">port SD[12]</data>
+        </row>
+        <row>
+            <data message="4">port SD[13]</data>
+        </row>
+        <row>
+            <data message="4">port SD[14]</data>
+        </row>
+        <row>
+            <data message="4">port SD[15]</data>
+        </row>
+        <row>
+            <data message="4">The pattern 'SD*' in command 'get_ports {SD* CS RS}' match 16 objects below:</data>
+        </row>
+        <row>
+            <data message="4">port SD[0]</data>
+        </row>
+        <row>
+            <data message="4">port SD[1]</data>
+        </row>
+        <row>
+            <data message="4">port SD[2]</data>
+        </row>
+        <row>
+            <data message="4">port SD[3]</data>
+        </row>
+        <row>
+            <data message="4">port SD[4]</data>
+        </row>
+        <row>
+            <data message="4">port SD[5]</data>
+        </row>
+        <row>
+            <data message="4">port SD[6]</data>
+        </row>
+        <row>
+            <data message="4">port SD[7]</data>
+        </row>
+        <row>
+            <data message="4">port SD[8]</data>
+        </row>
+        <row>
+            <data message="4">port SD[9]</data>
+        </row>
+        <row>
+            <data message="4">port SD[10]</data>
+        </row>
+        <row>
+            <data message="4">port SD[11]</data>
+        </row>
+        <row>
+            <data message="4">port SD[12]</data>
+        </row>
+        <row>
+            <data message="4">port SD[13]</data>
+        </row>
+        <row>
+            <data message="4">port SD[14]</data>
+        </row>
+        <row>
+            <data message="4">port SD[15]</data>
+        </row>
+        <row>
+            <data message="6">SDC-2017: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 84)] Nothing implicitly matched 'clk_50m|u_pll/u_pll_e3/CLKOUT0_Inferred'.</data>
+        </row>
+        <row>
+            <data message="7">CommandTiming-0057: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 84)] Nothing matched for 'from_list', command 'set_false_path' is aborted.</data>
+        </row>
+        <row>
+            <data message="6">SDC-2023: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 84)] Failed to parse the val of the option 'from' for command 'set_false_path'.</data>
+        </row>
+        <row>
+            <data message="7">ConstraintEditor-0046: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/timing.fdc(line number: 84)] Failed to import constraint &quot;set_false_path -from [get_clocks clk_50m|u_pll/u_pll_e3/CLKOUT0_Inferred] -to [get_clocks clk_50m]&quot;.</data>
+        </row>
+        <row>
+            <data message="6">ConstraintEditor-2002: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 61)] | Port SD[6] has been placed at location 55, whose type is share pin.</data>
+        </row>
+        <row>
+            <data message="6">ConstraintEditor-2002: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 139)] | Port SD[5] has been placed at location 54, whose type is share pin.</data>
+        </row>
+        <row>
+            <data message="6">ConstraintEditor-2002: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 71)] | Port SD[4] has been placed at location 53, whose type is share pin.</data>
+        </row>
+        <row>
+            <data message="6">ConstraintEditor-2002: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 78)] | Port SD[3] has been placed at location 52, whose type is share pin.</data>
+        </row>
+        <row>
+            <data message="6">ConstraintEditor-2002: [D:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/constraint/pin.fdc(line number: 102)] | Port CS has been placed at location 39, whose type is share pin.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ADC_A_IN' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ADC_C_IN' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ADC_D_IN' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'DAC_A_OUT' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'DAC_B_OUT' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'ADC_A_CLK' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'ADC_B_CLK' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'ADC_C_CLK' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'ADC_D_CLK' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'DAC_A_CLK' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'DAC_B_CLK' unspecified I/O constraint.</data>
+        </row>
+    </table>
+    <general_container id="synthesize_settings">
+        <table_container>
+            <table id="synthesize_settings" title="Synthesize Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL12G-6LPG144</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>body</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Option</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Fanout Guide</data>
+                        <data>10000</data>
+                    </row>
+                    <row>
+                        <data>Disable I/O Insertion</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Enable Advanced LUT Combining</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Automatic Read/Write Check Insertion for RAM</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Resource Sharing</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Pipelining</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Retiming</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Minimum Control-set Size</data>
+                        <data>2</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Timing Report</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Total Number of Paths (-max_path)</data>
+                        <data>3</data>
+                    </row>
+                    <row>
+                        <data>Number of Paths per Endpoint (-nworst)</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Report Exception</data>
+                        <data>true</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Constraints</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Frequency (MHz)</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Use Clock Period for Unconstrained IO</data>
+                        <data>false</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

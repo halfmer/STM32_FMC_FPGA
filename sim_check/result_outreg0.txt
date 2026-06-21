@@ -1,0 +1,47 @@
+=== TB START  OUTREG=0  ALL_LENGTH=16 ===
+ENTER POLL (t=903000) mem[0]=0x0000 mem[1]=0x1000
+[poll] addr1=0 (t=1013000)
+[poll] addr1=0 (t=1123000)
+[poll] addr1=0 (t=1233000)
+[poll] addr1=0 (t=1343000)
+[poll] addr1=255 (t=1453000)
+  i=0  num=4  data=0x1000
+  i=1  num=5  data=0x1001
+  i=2  num=6  data=0x1002
+  i=3  num=7  data=0x1003
+  i=4  num=8  data=0x1004
+  i=5  num=9  data=0x1005
+  i=6  num=10  data=0x1006
+  i=7  num=11  data=0x1007
+  i=8  num=12  data=0x1008
+  i=9  num=13  data=0x1009
+  i=10  num=14  data=0x100a
+  i=11  num=15  data=0x100b
+  i=12  num=16  data=0x100c
+  i=13  num=17  data=0x100d
+  i=14  num=18  data=0x100e
+  i=15  num=19  data=0x0000
+  i=16  num=20  data=0x127d
+  i=17  num=0  data=0x127d
+  i=18  num=0  data=0x127d
+
+================ SELF-CHECK (OUTREG=0) ================
+captured 16 words written to FIFO this frame
+collected valid points: 16 (expect 16)
+  [FAIL] idx 0 : num=4 read=0x1000  but FIFO-written[0]=0x0000
+  [FAIL] idx 1 : num=5 read=0x1001  but FIFO-written[1]=0x1000
+  [FAIL] idx 2 : num=6 read=0x1002  but FIFO-written[2]=0x1001
+  [FAIL] idx 3 : num=7 read=0x1003  but FIFO-written[3]=0x1002
+  [FAIL] idx 4 : num=8 read=0x1004  but FIFO-written[4]=0x1003
+  [FAIL] idx 5 : num=9 read=0x1005  but FIFO-written[5]=0x1004
+  [FAIL] idx 6 : num=10 read=0x1006  but FIFO-written[6]=0x1005
+  [FAIL] idx 7 : num=11 read=0x1007  but FIFO-written[7]=0x1006
+  [FAIL] idx 8 : num=12 read=0x1008  but FIFO-written[8]=0x1007
+  [FAIL] idx 9 : num=13 read=0x1009  but FIFO-written[9]=0x1008
+  [FAIL] idx 10 : num=14 read=0x100a  but FIFO-written[10]=0x1009
+  [FAIL] idx 11 : num=15 read=0x100b  but FIFO-written[11]=0x100a
+  [FAIL] idx 12 : num=16 read=0x100c  but FIFO-written[12]=0x100b
+  [FAIL] idx 13 : num=17 read=0x100d  but FIFO-written[13]=0x100c
+  [FAIL] idx 14 : num=18 read=0x100e  but FIFO-written[14]=0x100d
+  [FAIL] idx 15 : num=19 read=0x0000  but FIFO-written[15]=0x100e
+RESULT: FAIL  -- 16 issue(s)

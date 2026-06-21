@@ -1,0 +1,18 @@
+project/svmfunctions.o: \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\SVMFunctions.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_linear_init_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\dsp\svm_functions.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\arm_math_types.h \
+  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\arm_math_memory.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\dsp\none.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\dsp\utils.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Include\dsp\svm_defines.h \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_linear_predict_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_polynomial_init_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_polynomial_predict_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_rbf_init_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_rbf_predict_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_sigmoid_init_f32.c \
+  E:\keil_packs\ARM\CMSIS-DSP\1.16.2\Source\SVMFunctions\arm_svm_sigmoid_predict_f32.c

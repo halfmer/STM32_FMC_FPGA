@@ -1,0 +1,187 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/fpga_stm32/fpga_stm_fmc/fpga_stm/sim_check
+T_opt
+!s110 1781969071
+VVfbTaHT]d?>hdPb2NnGZ41
+04 11 4 work tb_selftest fast 0
+=1-1c8341d28221-6a36b0ae-2f3-8f34
+o-quiet -auto_acc_if_foreign -work work_chk +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vfifo
+Z2 !s110 1781968942
+!i10b 1
+!s100 _DgfHBQ6hg@ab^9A_A2O83
+I5I<;]=O5=bENf>38RV_4S3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1781796288
+8../fpga_pgl12g/prj/project/ipcore/fifo/fifo.v
+F../fpga_pgl12g/prj/project/ipcore/fifo/fifo.v
+L0 18
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+Z6 !s108 1781968942.000000
+Z7 !s107 ../fpga_pgl12g/source/fifo_and_fmc.v|../fpga_pgl12g/source/fmc.v|../fpga_pgl12g/source/my_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v|
+Z8 !s90 -work|work_chk|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v|../fpga_pgl12g/prj/project/ipcore/fifo/fifo.v|../fpga_pgl12g/source/my_fifo.v|../fpga_pgl12g/source/fmc.v|../fpga_pgl12g/source/fifo_and_fmc.v|
+!i113 0
+Z9 o-work work_chk -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo_and_fmc
+R2
+!i10b 1
+!s100 [TA]HMKzQlY:;eL<d`5PH0
+I?bg>D@2LBjgJE5K=;od4B0
+R3
+R0
+w1781959424
+8../fpga_pgl12g/source/fifo_and_fmc.v
+F../fpga_pgl12g/source/fifo_and_fmc.v
+Z10 L0 12
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vfmc
+R2
+!i10b 1
+!s100 oiYG[PazToYOhdBX@m^nO0
+ITdUJP;mTo^0MI[aCJ583E0
+R3
+R0
+w1781968827
+8../fpga_pgl12g/source/fmc.v
+F../fpga_pgl12g/source/fmc.v
+L0 17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vipm_distributed_fifo_ctr_v1_1_fifo
+R2
+!i10b 1
+!s100 `YaUBFF]=@[VP15B27:UF0
+Ia5cFc98ooYB`oFUJ0kOkS3
+R3
+R0
+R4
+8../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v
+F../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v
+Z11 L0 19
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vipm_distributed_fifo_v1_4_fifo
+R2
+!i10b 1
+!s100 ^B[]9oWfJKm3;K_ES3I?e1
+I1_I2Xm_Vln@3>2^lAbWCO3
+R3
+R0
+R4
+8../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v
+F../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vipm_distributed_sdpram_v1_3_fifo
+R2
+!i10b 1
+!s100 E3_2BgTn`D5o<8P17Ylfl0
+IazHA=3Pn`DQYj3F;2;44e1
+R3
+R0
+R4
+8../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v
+F../fpga_pgl12g/prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v
+L0 20
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vmy_fifo
+R2
+!i10b 1
+!s100 ^i<hUKM3i9FI7c^iL:a4g2
+I<5<PLQA1EieWJ`i6iGMJU1
+R3
+R0
+w1781709416
+8../fpga_pgl12g/source/my_fifo.v
+F../fpga_pgl12g/source/my_fifo.v
+L0 7
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_selftest
+!s110 1781969069
+!i10b 1
+!s100 CFW;5^[agNQD`zFUHdO;f2
+Izandh^WFeiQcD2Ej::RE=0
+R3
+R0
+w1781969047
+8tb_selftest.v
+Ftb_selftest.v
+R10
+R5
+r1
+!s85 0
+31
+!s108 1781969069.000000
+!s107 tb_selftest.v|
+!s90 -work|work_chk|tb_selftest.v|
+!i113 0
+R9
+R1

@@ -1,0 +1,134 @@
+# ==============================================================================
+# pin.fdc —— PGL12G-6 LPG144 物理管脚约束(STM32 FMC 接口 + 50M 时钟)
+#
+#   语法:Pango PDS FDC,define_attribute {p:端口} {属性} {值}(同 example.fdc)。
+#   IO 银行 VDDIOLx/VDDIORx = 3.3V → PAP_IO_VCCIO=3.3, PAP_IO_STANDARD=LVCMOS33。
+#   PAP_IO_LOC = LPG144 封装脚号(= 核心板网络名 IO_<N> 的 N)。
+#   时钟 create_clock 已在 timing.fdc 定义(clk_50m),此处不重复,只给 clk 物理属性。
+#   ★ 若改了手工接线,同步改对应 PAP_IO_LOC。SD 为 inout,不写 DIRECTION(由网表推断)。
+# ==============================================================================
+
+# ---- 50MHz 参考时钟:核心板板载晶振,LOC 44(无需接线)----
+define_attribute {p:clk} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:clk} {PAP_IO_LOC} {44}
+define_attribute {p:clk} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:clk} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:clk} {PAP_IO_NONE} {TRUE}
+
+# ---- FMC 控制信号(STM32 → FPGA,输入)----
+define_attribute {p:CS}  {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:CS}  {PAP_IO_LOC} {70}
+define_attribute {p:CS}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:CS}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:CS}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:RS}  {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:RS}  {PAP_IO_LOC} {69}
+define_attribute {p:RS}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:RS}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:RS}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:WR}  {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:WR}  {PAP_IO_LOC} {42}
+define_attribute {p:WR}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:WR}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:WR}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:RD}  {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:RD}  {PAP_IO_LOC} {47}
+define_attribute {p:RD}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:RD}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:RD}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:rst_32} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:rst_32} {PAP_IO_LOC} {46}
+define_attribute {p:rst_32} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:rst_32} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:rst_32} {PAP_IO_NONE} {TRUE}
+
+# ---- FMC 数据总线 SD[15:0](双向,inout)----
+define_attribute {p:SD[0]}  {PAP_IO_LOC} {39}
+define_attribute {p:SD[0]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[0]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[0]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[1]}  {PAP_IO_LOC} {40}
+define_attribute {p:SD[1]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[1]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[1]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[2]}  {PAP_IO_LOC} {41}
+define_attribute {p:SD[2]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[2]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[2]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[3]}  {PAP_IO_LOC} {43}
+define_attribute {p:SD[3]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[3]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[3]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[4]}  {PAP_IO_LOC} {45}
+define_attribute {p:SD[4]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[4]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[4]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[5]}  {PAP_IO_LOC} {52}
+define_attribute {p:SD[5]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[5]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[5]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[6]}  {PAP_IO_LOC} {53}
+define_attribute {p:SD[6]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[6]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[6]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[7]}  {PAP_IO_LOC} {54}
+define_attribute {p:SD[7]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[7]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[7]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[8]}  {PAP_IO_LOC} {55}
+define_attribute {p:SD[8]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[8]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[8]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[9]}  {PAP_IO_LOC} {58}
+define_attribute {p:SD[9]}  {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[9]}  {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[9]}  {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[10]} {PAP_IO_LOC} {59}
+define_attribute {p:SD[10]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[10]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[10]} {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[11]} {PAP_IO_LOC} {60}
+define_attribute {p:SD[11]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[11]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[11]} {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[12]} {PAP_IO_LOC} {61}
+define_attribute {p:SD[12]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[12]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[12]} {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[13]} {PAP_IO_LOC} {64}
+define_attribute {p:SD[13]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[13]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[13]} {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[14]} {PAP_IO_LOC} {65}
+define_attribute {p:SD[14]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[14]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[14]} {PAP_IO_NONE} {TRUE}
+
+define_attribute {p:SD[15]} {PAP_IO_LOC} {66}
+define_attribute {p:SD[15]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:SD[15]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:SD[15]} {PAP_IO_NONE} {TRUE}
+
+# ==============================================================================
+# 未约束端口(本核心板无 ADC/DAC):ADC_A_IN/ADC_C_IN/ADC_D_IN、DAC_*_OUT、
+#   ADC_*_CLK/DAC_*_CLK、CLK_130M 等交给 PDS 自动布到空闲脚(会有 warning,
+#   不影响 FMC 自检)。需要时再按本文件格式补 define_attribute。
+# ==============================================================================

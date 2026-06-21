@@ -1,0 +1,59 @@
+##### Written on 2026/06/14 23:32:08 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL12G-6LPG144
+
+Top Module : 
+	body
+
+Constraint File(s) : 
+	D:/fpga_stm32/fpga_stm_fmc/fpga_stm/stm/__codex_fpga_pgl12g_port/prj/project/timing.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 20 warning(s), out of 5 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+W: ConstraintEditor-4019: Port Bus 'ADC_A_IN' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'ADC_B_IN' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'ADC_C_IN' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'ADC_D_IN' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'DAC_A_OUT' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'DAC_B_OUT' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'SD' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'ADC_A_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'ADC_B_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'ADC_C_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'ADC_D_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'CLK_130M' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'CS' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'DAC_A_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'DAC_B_CLK' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'RD' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'RS' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'WR' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'clk' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'rst_32' unspecified I/O constraint.
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

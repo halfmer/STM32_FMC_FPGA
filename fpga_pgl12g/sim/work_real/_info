@@ -1,0 +1,226 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/fpga_stm32/fpga_stm_fmc/fpga_stm/fpga_pgl12g/sim
+vbody
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1782036391
+!i10b 1
+!s100 VF8l?c7;a7Z<=c>nbz:jW1
+I8eAZ]2Di`Nek[@3HI66T53
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 body_v_unit
+S1
+R0
+Z4 w1782034367
+8../source/body.v
+F../source/body.v
+L0 7
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+Z6 !s108 1782036391.000000
+Z7 !s107 ../source/body.v|../prj/project/ipcore/pll/pll.v|
+Z8 !s90 -sv|-work|work_real|../prj/project/ipcore/pll/pll.v|../source/body.v|
+!i113 0
+Z9 o-sv -work work_real -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 tCvgOpt 0
+vfifo
+R1
+Z11 !s110 1782036381
+!i10b 1
+!s100 F?1nWd<XL=mm?HQl4z;A92
+I0N>GZzR5Qm2baUA0K3K:H1
+R3
+!s105 fifo_v_unit
+S1
+R0
+Z12 w1781796288
+8../prj/project/ipcore/fifo/fifo.v
+F../prj/project/ipcore/fifo/fifo.v
+Z13 L0 18
+R5
+r1
+!s85 0
+31
+Z14 !s108 1782036381.000000
+Z15 !s107 ../source/fifo_and_fmc.v|../source/fmc.v|../source/my_fifo.v|../prj/project/ipcore/fifo/fifo.v|../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v|../prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v|../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v|
+Z16 !s90 -sv|-work|work_real|../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v|../prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v|../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v|../prj/project/ipcore/fifo/fifo.v|../source/my_fifo.v|../source/fmc.v|../source/fifo_and_fmc.v|
+!i113 0
+R9
+R10
+vfifo_and_fmc
+R1
+R11
+!i10b 1
+!s100 zPj?a@oTG:ozW>`0DE8Fb0
+IYl<ASWFInY8U<[gJgiiLe2
+R3
+!s105 fifo_and_fmc_v_unit
+S1
+R0
+R4
+8../source/fifo_and_fmc.v
+F../source/fifo_and_fmc.v
+L0 12
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vfmc
+R1
+R11
+!i10b 1
+!s100 A=Lb8U0N^`3jzP5<Bo<7k0
+I0M<QQZkh^kNlW>XT0fz8V3
+R3
+!s105 fmc_v_unit
+S1
+R0
+w1782036111
+8../source/fmc.v
+F../source/fmc.v
+L0 17
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vipm_distributed_fifo_ctr_v1_1_fifo
+R1
+R11
+!i10b 1
+!s100 0n0;61:>161@GPF5Cb`U@1
+IQS:gGN`=FzZi@n]bOh4d82
+R3
+!s105 ipm_distributed_fifo_ctr_v1_1_fifo_v_unit
+S1
+R0
+R12
+8../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v
+F../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_ctr_v1_1_fifo.v
+Z17 L0 19
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vipm_distributed_fifo_v1_4_fifo
+R1
+R11
+!i10b 1
+!s100 5S45M[DSRz68oHVU3RbeC2
+Ij9HWF`fIM1@50[@729@M81
+R3
+!s105 ipm_distributed_fifo_v1_4_fifo_v_unit
+S1
+R0
+R12
+8../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v
+F../prj/project/ipcore/fifo/rtl/ipm_distributed_fifo_v1_4_fifo.v
+R17
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vipm_distributed_sdpram_v1_3_fifo
+R1
+R11
+!i10b 1
+!s100 dFLmO^@7L;;M5@W7UhHNe1
+I4O7Ve13]h0A@nZgd7T?AI3
+R3
+!s105 ipm_distributed_sdpram_v1_3_fifo_v_unit
+S1
+R0
+R12
+8../prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v
+F../prj/project/ipcore/fifo/rtl/ipm_distributed_sdpram_v1_3_fifo.v
+L0 20
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vmy_fifo
+R1
+R11
+!i10b 1
+!s100 WWlXU4F4a244bbiMnRoT10
+ImYc8l?3jj^2UoHM<Dc@?01
+R3
+!s105 my_fifo_v_unit
+S1
+R0
+w1781709416
+8../source/my_fifo.v
+F../source/my_fifo.v
+L0 7
+R5
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R9
+R10
+vpll
+R1
+R2
+!i10b 1
+!s100 f^RR>;A[Qig7kk9DM5zzh0
+IKoEej[>YIS85obW2S5HkG2
+R3
+!s105 pll_v_unit
+S1
+R0
+w1781796032
+8../prj/project/ipcore/pll/pll.v
+F../prj/project/ipcore/pll/pll.v
+R13
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10

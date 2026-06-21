@@ -1,0 +1,64 @@
+# PGL12G timing constraints for the STM32-FMC bridge design.
+#
+# This file is imported by prj/project/project.pds. Pin constraints are
+# intentionally left out; add board pins and IO standards after checking the
+# PGL12G package and board schematic.
+
+###==== BEGIN "create_clock"
+create_clock -name {clk_50m} [get_ports {clk}] -period {20.000} -waveform {0.000 10.000}
+create_clock -name {fmc_wr} [get_ports {WR}] -period {20.000} -waveform {0.000 10.000}
+create_clock -name {clk_130m} [get_pins {pll_inst.clk_out}] -period {7.692} -waveform {0.000 3.846}
+###==== END "create_clock"
+
+###==== BEGIN "create_generated_clock"
+# The PLL IP must keep wrapper instance/port names:
+#   body.pll_inst.clk_in  -> 50 MHz
+#   body.pll_inst.clk_out -> 130 MHz
+#
+# The 130 MHz domain is constrained directly on the PLL output pin so timing
+# remains valid while the PLL is still a black box. If the generated Pango PLL
+# emits its own generated clock later, remove or reconcile the explicit
+# clk_130m create_clock above.
+
+###==== END "create_generated_clock"
+
+###==== BEGIN "set_clock_latency"
+###==== END "set_clock_latency"
+
+###==== BEGIN "set_clock_uncertainty"
+###==== END "set_clock_uncertainty"
+
+###==== BEGIN "set_clock_groups"
+set_clock_groups -name {async_fmc_clk50} -asynchronous -group [get_clocks {clk_50m}] -group [get_clocks {fmc_wr}]
+set_clock_groups -name {async_fmc_clk130} -asynchronous -group [get_clocks {clk_130m}] -group [get_clocks {fmc_wr}]
+###==== END "set_clock_groups"
+
+###==== BEGIN "set_input_delay"
+# Add FMC/ADC input delays after board pins and STM32/ADC timing are finalized.
+###==== END "set_input_delay"
+
+###==== BEGIN "set_output_delay"
+# Add FMC/DAC output delays after board pins and DAC/STM32 timing are finalized.
+###==== END "set_output_delay"
+
+###==== BEGIN "set_max_delay"
+###==== END "set_max_delay"
+
+###==== BEGIN "set_min_delay"
+###==== END "set_min_delay"
+
+###==== BEGIN "set_multicycle_path"
+###==== END "set_multicycle_path"
+
+###==== BEGIN "set_false_path"
+###==== END "set_false_path"
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+###==== END Attributes
+
+###==== BEGIN Logical
+###==== END Logical
+
+###==== BEGIN Io Table
+# Pin/IO constraints are intentionally omitted for board-level assignment.
+###==== END Io Table

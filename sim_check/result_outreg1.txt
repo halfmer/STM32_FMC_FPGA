@@ -1,0 +1,31 @@
+=== TB START  OUTREG=1  ALL_LENGTH=16 ===
+ENTER POLL (t=903000) mem[0]=0x0000 mem[1]=0x1000
+[poll] addr1=0 (t=1013000)
+[poll] addr1=0 (t=1123000)
+[poll] addr1=0 (t=1233000)
+[poll] addr1=0 (t=1343000)
+[poll] addr1=255 (t=1453000)
+  i=0  num=4  data=0x0000
+  i=1  num=5  data=0x1000
+  i=2  num=6  data=0x1001
+  i=3  num=7  data=0x1002
+  i=4  num=8  data=0x1003
+  i=5  num=9  data=0x1004
+  i=6  num=10  data=0x1005
+  i=7  num=11  data=0x1006
+  i=8  num=12  data=0x1007
+  i=9  num=13  data=0x1008
+  i=10  num=14  data=0x1009
+  i=11  num=15  data=0x100a
+  i=12  num=16  data=0x100b
+  i=13  num=17  data=0x100c
+  i=14  num=18  data=0x100d
+  i=15  num=19  data=0x100e
+  i=16  num=20  data=0x0000
+  i=17  num=0  data=0x127d
+  i=18  num=0  data=0x127d
+
+================ SELF-CHECK (OUTREG=1) ================
+captured 16 words written to FIFO this frame
+collected valid points: 16 (expect 16)
+RESULT: PASS  -- protocol self-consistent, num/data aligned

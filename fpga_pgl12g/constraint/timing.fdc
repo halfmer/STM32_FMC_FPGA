@@ -1,0 +1,57 @@
+#==============================================================================
+# timing.fdc - timing constraints for Pango Logos PGL12G-6 LPG144
+#
+# This file contains timing constraints only. Pin location and IO standard
+# constraints are kept in pin.fdc.
+#==============================================================================
+
+#------------------------------------------------------------------------------
+# 1. Clocks
+#------------------------------------------------------------------------------
+
+# Board 50 MHz oscillator into top-level port clk.
+create_clock -name {clk_50m} -period {20.000} -waveform {0 10.000} [get_ports {clk}]
+
+# PLL output clock. This object path is the one reported by PDS logs:
+# get_pins u_pll/u_pll_e3:CLKOUT0 successfully.
+create_generated_clock -name {clk_130m} -source [get_ports {clk}] [get_pins {u_pll/u_pll_e3:CLKOUT0}] -master_clock {clk_50m} -edges {1 2 3} -edge_shift {0.000000 -6.153846 -12.307692} -add
+
+# STM32 FMC NWE/WR strobe. It is used as a read-domain clock by the FIFO logic.
+create_clock -name {fmc_wr} -period {40.000} -waveform {0 20.000} [get_ports {WR}]
+
+#------------------------------------------------------------------------------
+# 2. Clock-domain separation
+#------------------------------------------------------------------------------
+
+# clk_50m, clk_130m and fmc_wr are asynchronous to each other in this design.
+# - clk_130m crosses to clk_50m through explicit synchronizers in fmc.v.
+# - FIFO write/read domains are handled inside the FIFO implementation.
+# - STM32 FMC access is controlled by slow asynchronous SRAM timing.
+set_clock_groups -asynchronous \
+    -group {clk_50m} \
+    -group {clk_130m} \
+    -group {fmc_wr}
+
+#------------------------------------------------------------------------------
+# 3. FMC asynchronous IO paths
+#------------------------------------------------------------------------------
+
+# FMC is an asynchronous SRAM-style interface. These input/control pins are
+# sampled or used asynchronously by FPGA logic, so they are cut from normal
+# synchronous input timing analysis.
+set_false_path -from [get_ports {CS RS WR RD SD*}]
+
+#------------------------------------------------------------------------------
+# 4. ADC/DAC source-synchronous IO placeholders
+#------------------------------------------------------------------------------
+
+# Fill these in from the ADC/DAC datasheets and board trace delays if the analog
+# data path needs closed timing. They are intentionally left disabled during FMC
+# link bring-up.
+# set_input_delay  -clock {clk_130m} -max 3.0 [get_ports {ADC_A_IN* ADC_C_IN* ADC_D_IN*}]
+# set_input_delay  -clock {clk_130m} -min 1.0 [get_ports {ADC_A_IN* ADC_C_IN* ADC_D_IN*}]
+# set_output_delay -clock {clk_130m} -max 2.0 [get_ports {DAC_A_OUT* DAC_B_OUT*}]
+# set_output_delay -clock {clk_130m} -min 0.5 [get_ports {DAC_A_OUT* DAC_B_OUT*}]
+
+# rst_32 is an asynchronous external reset input.
+set_false_path -from [get_ports {rst_32}]

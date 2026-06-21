@@ -1,0 +1,23 @@
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.vcd binary
+*.qdb binary
+*.qpg binary
+*.qtl binary
+*.db binary
+*.cmr binary
+*.dmr binary
+*.bgr binary
+*.sbit binary
+*.smsk binary
+*.o binary
+*.obj binary
+*.crf binary
+*.axf binary
+*.lib binary
+*.a binary
+*.pyc binary
+
